@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07111f"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="JARVIS AI">
+<title>JARVIS AI</title>
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+<header><div class="brand"><span class="arc">◉</span><div><b>J.A.R.V.I.S.</b><small>PERSONAL ASSISTANT</small></div></div><div class="header-actions"><button id="install" hidden>INSTALL APP</button><div class="status"><i></i> SYSTEM ONLINE</div></div></header>
+<main>
+<section class="hero"><div class="eyebrow">PERSONAL INTELLIGENCE SYSTEM</div><h1>Good day.<br><span>How can I help?</span></h1><p>Your personal voice and text assistant.</p>
+<div class="orb-wrap"><div class="ring r1"></div><div class="ring r2"></div><div class="orb"><span>J</span></div></div>
+<div class="statusline" id="status">READY · AWAITING COMMAND</div></section>
+<section class="panel">
+<div class="panel-head"><span>COMMAND CONSOLE</span><span class="tiny">VOICE / TEXT</span></div>
+<div class="messages" id="messages"><div class="msg bot">JARVIS online. You can type a request or use the microphone. Try “what time is it?” or “open YouTube”.</div></div>
+<div class="composer"><button id="mic" aria-label="Start voice input">🎙</button><input id="prompt" placeholder="Ask JARVIS anything..." autocomplete="off"><button id="send">SEND ↗</button></div>
+<div class="quick"><button data-cmd="What time is it?">TIME</button><button data-cmd="What is today's date?">DATE</button><button data-cmd="Show my battery level">BATTERY</button><button data-cmd="Open YouTube">OPEN YOUTUBE</button></div>
+</section>
+</main>
+<footer>JARVIS AI · A PERSONAL PROJECT <span>Built for the web</span></footer>
+</div>
+<script src="app.js"></script>
+</body></html>
