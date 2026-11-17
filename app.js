@@ -37,3 +37,4 @@ window.addEventListener("appinstalled",()=>{installPrompt=null;installButton.hid
 
 // Service workers require HTTPS (GitHub Pages is HTTPS) or localhost.
 if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("./service-worker.js").catch(()=>{}));}
+console.log("JARVIS app.js loaded");
